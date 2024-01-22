@@ -5,8 +5,8 @@ body, h1, h2, p, ul, li, img {
 }
 
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f2f2f2;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f8f8;
   color: #333;
 }
 
@@ -16,7 +16,7 @@ body {
 }
 
 header {
-  background-color: #00509e;
+  background-color: #2a3d66;
   color: #fff;
   padding: 1rem 0;
 }
@@ -67,6 +67,11 @@ a {
   margin: 20px;
   text-align: left;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.theme-card:hover {
+  transform: scale(1.05);
 }
 
 .theme-card img {
@@ -80,13 +85,18 @@ a {
   color: #333;
 }
 
+/* Color scheme for each theme */
+.theme-card.environment { background-color: #4caf50; }
+.theme-card.education { background-color: #2196f3; }
+.theme-card.inclusion { background-color: #ff9800; }
+
 .about {
-  background-color: #f2f2f2;
+  background-color: #f8f8f8;
   padding: 50px 0;
 }
 
 footer {
-  background-color: #00509e;
+  background-color: #2a3d66;
   color: #fff;
   text-align: center;
   padding: 20px 0;
@@ -94,3 +104,4 @@ footer {
   bottom: 0;
   width: 100%;
 }
+
