@@ -1,34 +1,37 @@
 /* Reset some default styles */
-body, h1, h2, p, ul, li {
+body, h1, h2, p, ul, li, img {
   margin: 0;
   padding: 0;
 }
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f8f8f8;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
 }
 
 header {
-  background-color: #333;
+  background-color: #00509e;
   color: #fff;
-  padding: 1rem;
-  text-align: center;
+  padding: 1rem 0;
 }
 
 nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
+  display: flex;
 }
 
 li {
-  display: inline-block;
   margin: 0 15px;
 }
 
@@ -39,40 +42,25 @@ a {
   font-size: 1.2rem;
 }
 
-section {
-  padding: 2rem;
-  text-align: center;
-}
-
-h1, h2 {
-  color: #333;
-}
-
-#home {
-  background-color: #fff;
-}
-
-#themes {
-  background-color: #f0f0f0;
-}
-
-#about {
-  background-color: #fff;
-}
-
-footer {
-  background-color: #333;
+.hero {
+  background: url('hero.jpg') center/cover no-repeat;
   color: #fff;
   text-align: center;
-  padding: 1rem;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  padding: 100px 0;
 }
 
-/* Additional styling for theme cards */
-.theme-card {
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.themes {
   background-color: #fff;
+  padding: 50px 0;
+}
+
+.theme-card {
+  background-color: #fafafa;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 20px;
@@ -81,6 +69,28 @@ footer {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.theme-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
 .theme-card h3 {
   color: #333;
+}
+
+.about {
+  background-color: #f2f2f2;
+  padding: 50px 0;
+}
+
+footer {
+  background-color: #00509e;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
