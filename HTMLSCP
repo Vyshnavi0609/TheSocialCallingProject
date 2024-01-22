@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Social Calling Project</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#themes">Themes</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h1>Welcome to The Social Calling Project</h1>
+    <p>Discover your social calling and make a difference!</p>
+  </section>
+
+  <section id="themes">
+    <h2>Themes</h2>
+    <ul>
+      <li>Environment</li>
+      <li>Education</li>
+      <li>Diversity and Inclusion</li>
+    </ul>
+  </section>
+
+  <section id="about">
+    <h2>About the Founder</h2>
+    <p>Short description of the founder goes here.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2022 The Social Calling Project. All rights reserved.</p>
+  </footer>
+</body>
+</html>
