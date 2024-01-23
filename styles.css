@@ -139,13 +139,38 @@ a:hover::before {
   color: #ddd; /* Light gray text */
 }
 
+.blog {
+  /* Add styles for the blog section as needed */
+}
+
 .about {
   background-color: #fff; /* White background */
   padding: 50px 0;
 }
 
+/* Add this style to create a logical section break */
+.about::before {
+  content: '';
+  display: block;
+  height: 50px; /* Adjust the height of the section break */
+}
+
 .founder-info {
   text-align: center;
+  display: flex;
+  justify-content: space-around; /* Adjust as needed */
+  align-items: center;
+}
+
+.founder-image {
+  max-width: 200px; /* Adjust the maximum width of the image */
+  margin-right: 20px; /* Adjust the margin between image and description */
+}
+
+.founder-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Add border-radius for a rounded image */
 }
 
 .founder-description {
@@ -219,6 +244,7 @@ footer {
   color: #fff;
   font-size: 1.5rem;
 }
+
 
 
 
