@@ -7,7 +7,7 @@ body, h1, h2, p, ul, li, img, form {
 body {
   font-family: 'Roboto', sans-serif;
   color: #fff;
-  background-color: transparent; /* Set body background to transparent */
+  background-color: transparent;
 }
 
 .container {
@@ -22,11 +22,11 @@ header {
   text-align: center;
 }
 
-/* Style for the navigation links */
 nav {
   margin-top: 10px;
-  margin-bottom: 0; /* Add margin-bottom to create space between navigation and hero */
+  margin-bottom: 0;
 }
+
 ul {
   list-style: none;
   display: flex;
@@ -73,8 +73,8 @@ a:hover::before {
   position: relative;
   overflow: hidden;
   height: 100vh;
-  margin: 0; /* Set margin to 0 */
-  padding: 0; /* Set padding to 0 */
+  margin: 0;
+  padding: 0;
 }
 
 .hero::before {
@@ -124,15 +124,8 @@ a:hover::before {
   }
 }
 
-/* Continue with the rest of your styles */
-
-
-
-/* Style for the "Our Inspiring Themes" section */
-/* Existing styles remain unchanged */
-
 .themes {
-  background-color: transparent; /* Set the background to transparent */
+  background-color: transparent;
   padding: 10px;
   text-align: center;
 }
@@ -140,12 +133,11 @@ a:hover::before {
 .theme-cards {
   display: flex;
   justify-content: center;
-  /* Updated styles for a single row */
-  flex-direction: row; 
+  flex-wrap: wrap;
 }
 
 .theme-card {
-  background-color: #4CAF50; /* Change the background color with !important */
+  background-color: #4CAF50;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 20px;
@@ -156,25 +148,12 @@ a:hover::before {
   transition: transform 0.3s ease-in-out;
 }
 
-.theme-card h3,
-.theme-card p {
-  color:#000 !important; /* Change the font color to gray with !important */
-}
-.themes h2 {
-  color: #000; /* Set font color to black */
-}
-
-/* Different background colors for each theme card */
-.theme-card:nth-child(1) { background-color: #3498db; } /* Blue */
-.theme-card:nth-child(2) { background-color: #e74c3c; } /* Red */
-.theme-card:nth-child(3) { background-color: #2ecc71; } /* Orange */
-
 .theme-card:hover {
   transform: scale(1.05);
 }
 
 .theme-card h3 {
-  color: #fff; /* Change the text color */
+  color: #fff;
   position: relative;
 }
 
@@ -191,7 +170,9 @@ a:hover::before {
   color: #ddd;
 }
 
-
+.themes h2 {
+  color: #000;
+}
 
 .about {
   background-color: #fff;
@@ -293,6 +274,7 @@ footer {
   color: #fff;
   font-size: 1.5rem;
 }
+
 
 
 
