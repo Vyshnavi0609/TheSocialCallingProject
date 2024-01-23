@@ -7,7 +7,7 @@ body, h1, h2, p, ul, li, img, form {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #cfe8c2; /* Subtle green background */
+  background-color: #f4f4f4; /* Light gray background */
   color: #333;
 }
 
@@ -17,7 +17,7 @@ body {
 }
 
 header {
-  background-color: #5f936b; /* Dark green header */
+  background-color: #007acc; /* Blue header */
   color: #fff;
   padding: 1rem 0;
 }
@@ -51,121 +51,49 @@ a {
 .hero h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #5f936b; /* Dark green text */
+  color: #007acc; /* Blue text */
 }
 
 .themes {
-  background-color: #fff;
+  background-color: #fff; /* White background */
   padding: 50px 0;
 }
 
 .theme-cards {
   display: flex;
-  justify-content: space-around;
-  align-items: stretch;
-  flex-wrap: wrap;
+  flex-direction: column; /* Align themes vertically */
+  align-items: center;
 }
 
 .theme-card {
-  background-color: #f3f3f3; /* Lighter card background */
+  background-color: #e0e0e0; /* Light gray card background */
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 20px;
-  margin: 20px;
-  text-align: left;
+  margin: 20px 0; /* Adjust spacing */
+  text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
-  flex: 1;
-  overflow: hidden;
 }
 
-.theme-card:hover {
-  transform: scale(1.05);
+.theme-card h3 {
+  color: #007acc; /* Blue text */
 }
 
-.theme-card h3,
 .theme-card p {
-  color: #5f936b; /* Dark green text */
-}
-
-/* Creative elements */
-
-/* ... (previous styles) */
-
-/* Creative elements */
-
-.theme-card::before {
-  content: '';
-  background-size: cover;
-  background-position: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 0.1; /* Adjust the opacity as needed */
-  pointer-events: none;
-}
-
-.theme-card.environment::before {
-  background-image: url('bee.gif'); /* Replace 'bee.gif' with your bee animation URL */
-  animation: floatAnimation 10s linear infinite;
-}
-
-.theme-card.education::before {
-  background-image: url('books.gif'); /* Replace 'books.gif' with your books animation URL */
-  animation: scrollAnimation 10s linear infinite;
-}
-
-.theme-card.inclusion::before {
-  background-image: url('people.gif'); /* Replace 'people.gif' with your people holding hands animation URL */
-  animation: handsAnimation 10s linear infinite;
-}
-
-@keyframes floatAnimation {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-@keyframes scrollAnimation {
-  0% {
-    background-position: 0% 0%;
-  }
-  100% {
-    background-position: 100% 100%;
-  }
-}
-
-@keyframes handsAnimation {
-  0% {
-    transform: scaleX(1);
-  }
-  50% {
-    transform: scaleX(1.1);
-  }
-  100% {
-    transform: scaleX(1);
-  }
+  color: #555;
 }
 
 .about {
-  background-color: #cfe8c2; /* Subtle green background */
+  background-color: #f4f4f4; /* Light gray background */
   padding: 50px 0;
 }
 
 .founder-info {
-  padding-left: 30px;
+  text-align: center;
 }
 
 .contact {
-  background-color: #cfe8c2; /* Subtle green background */
+  background-color: #fff; /* White background */
   padding: 50px 0;
   text-align: center;
 }
@@ -180,6 +108,7 @@ form {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
+  justify-content: center;
 }
 
 label {
@@ -188,14 +117,14 @@ label {
 
 input,
 textarea {
-  width: 100%;
+  width: calc(100% - 20px); /* Adjust width */
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
 
 button {
-  background-color: #5f936b; /* Dark green button */
+  background-color: #007acc; /* Blue button */
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -205,11 +134,11 @@ button {
 }
 
 button:hover {
-  background-color: #3f6146; /* Darker green on hover */
+  background-color: #005a8c; /* Darker blue on hover */
 }
 
 footer {
-  background-color: #5f936b; /* Dark green footer */
+  background-color: #007acc; /* Blue footer */
   color: #fff;
   text-align: center;
   padding: 10px 0;
@@ -220,6 +149,7 @@ footer {
 
 .social-icons {
   margin-top: 10px;
+  text-align: center;
 }
 
 .social-icons a {
@@ -227,6 +157,7 @@ footer {
   color: #fff;
   font-size: 1.5rem;
 }
+
 
 
 
