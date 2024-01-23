@@ -145,7 +145,7 @@ a:hover::before {
 }
 
 .theme-card {
-  background-color: #4CAF50 !important; /* Change the background color with !important */
+  background-color: #4CAF50; /* Change the background color with !important */
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 20px;
@@ -160,6 +160,10 @@ a:hover::before {
 .theme-card p {
   color:#000 !important; /* Change the font color to gray with !important */
 }
+.themes h2 {
+  color: #000; /* Set font color to black */
+}
+
 /* Different background colors for each theme card */
 .theme-card:nth-child(1) { background-color: #3498db; } /* Blue */
 .theme-card:nth-child(2) { background-color: #e74c3c; } /* Red */
