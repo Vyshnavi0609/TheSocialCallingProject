@@ -129,8 +129,10 @@ a:hover::before {
 
 
 /* Style for the "Our Inspiring Themes" section */
+/* Existing styles remain unchanged */
+
 .themes {
-  background-color: #4CAF50; /* Change the background color */
+  background-color: transparent; /* Set the background to transparent */
   padding: 10px;
   text-align: center;
 }
@@ -138,11 +140,11 @@ a:hover::before {
 .theme-cards {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  /* Updated styles for a single row */
+  flex-direction: row; 
 }
 
 .theme-card {
-  background-color: #4CAF50;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 20px;
@@ -152,6 +154,11 @@ a:hover::before {
   width: 300px;
   transition: transform 0.3s ease-in-out;
 }
+
+/* Different background colors for each theme card */
+.theme-card:nth-child(1) { background-color: #3498db; } /* Blue */
+.theme-card:nth-child(2) { background-color: #e74c3c; } /* Red */
+.theme-card:nth-child(3) { background-color: #2ecc71; } /* Orange */
 
 .theme-card:hover {
   transform: scale(1.05);
