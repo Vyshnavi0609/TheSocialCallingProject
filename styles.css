@@ -120,6 +120,16 @@ a:hover::before {
 
 .theme-card h3 {
   color: #fff; /* White text */
+  position: relative;
+}
+
+.theme-card h3::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 50%;
+  background-color: #fff;
+  margin: 10px auto;
 }
 
 .theme-card p {
@@ -206,6 +216,7 @@ footer {
   color: #fff;
   font-size: 1.5rem;
 }
+
 
 
 
