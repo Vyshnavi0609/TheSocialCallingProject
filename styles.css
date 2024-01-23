@@ -153,6 +153,7 @@ a:hover::before {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 300px;
   transition: transform 0.3s ease-in-out;
+  color: #808080; /* Change the font color to gray */
 }
 
 /* Different background colors for each theme card */
