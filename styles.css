@@ -88,6 +88,8 @@ a:hover::before {
   background: url('Backdrop.png') repeat-x center center;
   animation: moveBackground 10s linear infinite;
   z-index: -1;
+  margin: 0; /* Set margin to 0 */
+  padding: 0; /* Set padding to 0 */
 }
 
 .text-overlay {
