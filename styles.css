@@ -22,10 +22,11 @@ header {
   text-align: center;
 }
 
+/* Style for the navigation links */
 nav {
   margin-top: 10px;
+  margin-bottom: 20px; /* Add margin-bottom to create space between navigation and hero */
 }
-
 ul {
   list-style: none;
   display: flex;
@@ -122,8 +123,9 @@ a:hover::before {
 }
 
 
+/* Style for the "Our Inspiring Themes" section */
 .themes {
-  background-color: #fff;
+  background-color: #4CAF50; /* Change the background color */
   padding: 50px 0;
   text-align: center;
 }
@@ -151,7 +153,7 @@ a:hover::before {
 }
 
 .theme-card h3 {
-  color: #fff;
+  color: #fff; /* Change the text color */
   position: relative;
 }
 
@@ -168,9 +170,7 @@ a:hover::before {
   color: #ddd;
 }
 
-.blog {
-  /* Add styles for the blog section as needed */
-}
+
 
 .about {
   background-color: #fff;
