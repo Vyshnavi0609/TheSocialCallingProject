@@ -1,4 +1,3 @@
-/* Reset some default styles */
 body, h1, h2, p, ul, li, img, form {
   margin: 0;
   padding: 0;
@@ -7,7 +6,6 @@ body, h1, h2, p, ul, li, img, form {
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #4CAF50;
   color: #fff;
 }
 
@@ -121,6 +119,7 @@ a:hover::before {
     transform: translateX(-50%);
   }
 }
+
 
 .themes {
   background-color: #fff;
