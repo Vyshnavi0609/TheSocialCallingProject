@@ -93,6 +93,28 @@ a:hover::before {
   }
 }
 
+/* Add these styles for the moving image */
+.moving-image-container {
+  overflow: hidden;
+  position: relative;
+  margin-top: 20px; /* Adjust the margin as needed */
+}
+
+.moving-image-container img {
+  width: 100%;
+  animation: moveImage 10s linear infinite; /* Adjust the duration as needed */
+}
+
+@keyframes moveImage {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%); /* Adjust the distance to move */
+  }
+}
+
+
 .themes {
   background-color: #fff; /* White background */
   padding: 50px 0;
