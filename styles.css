@@ -82,7 +82,7 @@ a:hover::before {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%; /* Change to 100% to cover the entire width of the hero section */
+  width: 200%;
   height: 100%;
   background: url('Backdrop.png') repeat-x center center;
   animation: moveBackground 10s linear infinite;
@@ -123,6 +123,9 @@ a:hover::before {
     transform: translateX(-50%);
   }
 }
+
+/* Continue with the rest of your styles */
+
 
 
 /* Style for the "Our Inspiring Themes" section */
