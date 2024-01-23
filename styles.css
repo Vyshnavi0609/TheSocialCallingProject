@@ -70,10 +70,9 @@ a:hover::before {
 }
 
 .hero {
-  position: relative;
+  position: absolute;
   overflow: hidden;
   height: 100vh;
-  background-color: transparent;
   margin: 0; /* Set margin to 0 */
   padding: 0; /* Set padding to 0 */
 }
@@ -131,7 +130,7 @@ a:hover::before {
 /* Style for the "Our Inspiring Themes" section */
 .themes {
   background-color: #4CAF50; /* Change the background color */
-  padding: 0;
+  padding: 10px;
   text-align: center;
 }
 
