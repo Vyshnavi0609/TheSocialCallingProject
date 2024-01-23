@@ -93,44 +93,21 @@ a:hover::before {
   }
 }
 
-/* Add these styles for the moving image */
-.moving-image-container {
-  overflow: hidden;
-  position: relative;
-  margin-top: 20px; /* Adjust the margin as needed */
-}
-
-.moving-image-container img {
-  width: 100%;
-  animation: moveImage 10s linear infinite; /* Adjust the duration as needed */
-}
-
-@keyframes moveImage {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%); /* Adjust the distance to move */
-  }
-}
 /* Add these styles for the moving image and text overlay */
-.moving-image-container {
+.hero {
   position: relative;
   overflow: hidden;
-}
-
-.moving-image-container img {
-  width: 100%;
-  animation: moveImage 10s linear infinite; /* Adjust the duration as needed */
+  background: url('Backdrop.png') center center no-repeat;
+  background-size: cover;
+  height: 100vh; /* Adjust the height as needed */
+  color: #fff; /* White text color */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .text-overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff; /* White text color */
-  text-align: center;
   z-index: 2; /* Ensure the text appears on top of the image */
 }
 
@@ -142,16 +119,6 @@ a:hover::before {
 .text-overlay p {
   font-size: 1.2em; /* Adjust the font size as needed */
 }
-
-@keyframes moveImage {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%); /* Adjust the distance to move */
-  }
-}
-
 
 .themes {
   background-color: #fff; /* White background */
