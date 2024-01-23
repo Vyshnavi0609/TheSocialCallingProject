@@ -7,7 +7,7 @@ body, h1, h2, p, ul, li, img, form {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #f0f5f9;
+  background-color: #b6d7a8; /* Green background */
   color: #333;
 }
 
@@ -17,7 +17,7 @@ body {
 }
 
 header {
-  background-color: #2a3d66;
+  background-color: #4a6840; /* Dark green header */
   color: #fff;
   padding: 1rem 0;
 }
@@ -44,8 +44,6 @@ a {
 }
 
 .hero {
-  background: url('hero.jpg') center/cover no-repeat;
-  color: #fff;
   text-align: center;
   padding: 100px 0;
 }
@@ -53,6 +51,7 @@ a {
 .hero h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
+  color: #4a6840; /* Dark green text */
 }
 
 .themes {
@@ -83,44 +82,26 @@ a {
   transform: scale(1.05);
 }
 
-.theme-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 15px;
-}
-
 .theme-card h3 {
-  color: #333;
+  color: #4a6840; /* Dark green text */
 }
-
-/* Color scheme for each theme */
-.theme-card.environment { background-color: #3fb27f; }
-.theme-card.education { background-color: #4f81c7; }
-.theme-card.inclusion { background-color: #e59d4c; }
 
 .about {
-  background-color: #f0f5f9;
+  background-color: #b6d7a8; /* Green background */
   padding: 50px 0;
 }
 
-.founder {
-  flex: 1;
-}
-
-.founder img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
 .founder-info {
-  flex: 2;
   padding-left: 30px;
 }
 
-.contact {
+.blog {
   background-color: #fff;
+  padding: 50px 0;
+}
+
+.contact {
+  background-color: #b6d7a8; /* Green background */
   padding: 50px 0;
 }
 
@@ -149,7 +130,7 @@ textarea {
 }
 
 button {
-  background-color: #2a3d66;
+  background-color: #4a6840; /* Dark green button */
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -159,16 +140,27 @@ button {
 }
 
 button:hover {
-  background-color: #1a253c;
+  background-color: #2d4428; /* Darker green on hover */
 }
 
 footer {
-  background-color: #2a3d66;
+  background-color: #4a6840; /* Dark green footer */
   color: #fff;
   text-align: center;
-  padding: 20px 0;
+  padding: 10px 0;
   position: fixed;
   bottom: 0;
   width: 100%;
 }
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
 
