@@ -59,6 +59,13 @@ a {
   padding: 50px 0;
 }
 
+.theme-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .theme-card {
   background-color: #fafafa;
   border: 1px solid #ddd;
@@ -95,6 +102,21 @@ a {
   padding: 50px 0;
 }
 
+.founder {
+  flex: 1;
+}
+
+.founder img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.founder-info {
+  flex: 2;
+  padding-left: 30px;
+}
+
 footer {
   background-color: #2a3d66;
   color: #fff;
@@ -104,4 +126,3 @@ footer {
   bottom: 0;
   width: 100%;
 }
-
