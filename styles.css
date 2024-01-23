@@ -158,7 +158,7 @@ a:hover::before {
 
 .theme-card h3,
 .theme-card p {
-  color: #808080 !important; /* Change the font color to gray with !important */
+  color:#000 !important; /* Change the font color to gray with !important */
 }
 /* Different background colors for each theme card */
 .theme-card:nth-child(1) { background-color: #3498db; } /* Blue */
