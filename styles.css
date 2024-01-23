@@ -73,6 +73,9 @@ a:hover::before {
   position: relative;
   overflow: hidden;
   height: 100vh;
+  background-color: transparent;
+  margin: 0; /* Set margin to 0 */
+  padding: 0; /* Set padding to 0 */
 }
 
 .hero::before {
