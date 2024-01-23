@@ -93,22 +93,32 @@ a:hover::before {
   }
 }
 
-/* Add these styles for the moving image and text overlay */
+/* Add these styles for the moving background and text overlay */
 .hero {
   position: relative;
   overflow: hidden;
-  background: url('Backdrop.png') center center no-repeat;
-  background-size: cover;
   height: 100vh; /* Adjust the height as needed */
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%; /* Adjust the width to control the speed of the movement */
+  height: 100%;
+  background: url('images/your-image.jpg') repeat-x center center;
+  animation: moveBackground 10s linear infinite; /* Adjust the duration as needed */
+}
+
+.text-overlay {
+  position: relative;
+  z-index: 2; /* Ensure the text appears on top of the image */
   color: #fff; /* White text color */
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.text-overlay {
-  z-index: 2; /* Ensure the text appears on top of the image */
 }
 
 .text-overlay h1 {
@@ -118,6 +128,15 @@ a:hover::before {
 
 .text-overlay p {
   font-size: 1.2em; /* Adjust the font size as needed */
+}
+
+@keyframes moveBackground {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Adjust the distance to move */
+  }
 }
 
 .themes {
