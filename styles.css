@@ -67,7 +67,7 @@ a:hover::before {
   width: 100px; /* Adjust logo size */
 }
 
-/* Add styles for other sections (home, themes, about, contact) based on the provided website */
+/* Add styles for other sections (hero, themes, about, contact) based on the provided website */
 
 .hero {
   text-align: center;
@@ -87,8 +87,8 @@ a:hover::before {
 
 .theme-cards {
   display: flex;
-  flex-direction: column; /* Align themes vertically */
-  align-items: center;
+  justify-content: space-around; /* Align themes horizontally */
+  flex-wrap: wrap; /* Allow wrapping to the next line */
 }
 
 .theme-card {
@@ -99,6 +99,7 @@ a:hover::before {
   margin: 20px 0; /* Adjust spacing */
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px; /* Adjust card width */
 }
 
 .theme-card h3 {
@@ -182,6 +183,7 @@ footer {
   color: #fff;
   font-size: 1.5rem;
 }
+
 
 
 
