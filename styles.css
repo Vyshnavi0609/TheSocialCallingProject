@@ -1,12 +1,13 @@
 /* Reset some default styles */
-body, h1, h2, p, ul, li, img {
+body, h1, h2, p, ul, li, img, form {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #f8f8f8;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f0f5f9;
   color: #333;
 }
 
@@ -61,8 +62,8 @@ a {
 
 .theme-cards {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  align-items: stretch;
   flex-wrap: wrap;
 }
 
@@ -75,6 +76,7 @@ a {
   text-align: left;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
+  flex: 1;
 }
 
 .theme-card:hover {
@@ -93,12 +95,12 @@ a {
 }
 
 /* Color scheme for each theme */
-.theme-card.environment { background-color: #4caf50; }
-.theme-card.education { background-color: #2196f3; }
-.theme-card.inclusion { background-color: #ff9800; }
+.theme-card.environment { background-color: #3fb27f; }
+.theme-card.education { background-color: #4f81c7; }
+.theme-card.inclusion { background-color: #e59d4c; }
 
 .about {
-  background-color: #f8f8f8;
+  background-color: #f0f5f9;
   padding: 50px 0;
 }
 
@@ -117,6 +119,49 @@ a {
   padding-left: 30px;
 }
 
+.contact {
+  background-color: #fff;
+  padding: 50px 0;
+}
+
+.contact h2 {
+  text-align: center;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+label {
+  flex-basis: 100%;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #2a3d66;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #1a253c;
+}
+
 footer {
   background-color: #2a3d66;
   color: #fff;
@@ -126,3 +171,4 @@ footer {
   bottom: 0;
   width: 100%;
 }
+
