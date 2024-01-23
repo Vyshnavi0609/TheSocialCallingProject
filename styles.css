@@ -6,9 +6,9 @@ body, h1, h2, p, ul, li, img, form {
 }
 
 body {
-  font-family: 'Roboto', sans-serif; /* Change to desired font */
-  background-color: #4CAF50; /* Dark green background */
-  color: #333;
+  font-family: 'Roboto', sans-serif;
+  background-color: #4CAF50;
+  color: #fff;
 }
 
 .container {
@@ -17,7 +17,7 @@ body {
 }
 
 header {
-  background-color: #333; /* Dark gray header */
+  background-color: #333;
   color: #fff;
   padding: 1rem 0;
   text-align: center;
@@ -65,20 +65,40 @@ a:hover::before {
 }
 
 .logo {
-  width: 100px; /* Adjust logo size */
+  width: 100px;
   margin-top: 10px;
 }
 
 .hero {
-  text-align: center;
-  padding: 50px 0;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
 }
 
-.hero h1,
-.hero p,
-.themes h2,
-.about h2,
-.contact h2 {
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background: url('Backdrop.png') repeat-x center center;
+  animation: moveBackground 10s linear infinite;
+  z-index: -1;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  z-index: 2;
+}
+
+.text-overlay h1,
+.text-overlay p {
   animation: fadeInUp 1s ease-in-out;
 }
 
@@ -93,60 +113,19 @@ a:hover::before {
   }
 }
 
-/* Add these styles for the moving background and text overlay */
-.hero {
-  position: relative;
-  overflow: hidden;
-  height: 100vh; /* Adjust the height as needed */
-}
-
-.hero::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 200%; /* Adjust the width to control the speed of the movement */
-  height: 100%;
-  background: url('Backdrop.png') repeat-x center center;
-  animation: moveBackground 10s linear infinite; /* Adjust the duration as needed */
-  z-index: -1; /* Move the background behind the text */
-}
-
-.text-overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff; /* White text color */
-  text-align: center;
-  z-index: 2; /* Ensure the text appears on top of the image */
-}
-
-.text-overlay h1 {
-  font-size: 2em; /* Adjust the font size as needed */
-  margin-bottom: 10px; /* Adjust spacing between h1 and p */
-}
-
-.text-overlay p {
-  font-size: 1.2em; /* Adjust the font size as needed */
-}
-
 @keyframes moveBackground {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%); /* Adjust the distance to move */
+    transform: translateX(-50%);
   }
 }
 
-
-
-
 .themes {
-  background-color: #fff; /* White background */
+  background-color: #fff;
   padding: 50px 0;
-  text-align: center; /* Center the themes section */
+  text-align: center;
 }
 
 .theme-cards {
@@ -156,14 +135,14 @@ a:hover::before {
 }
 
 .theme-card {
-  background-color: #4CAF50; /* Dark green card background */
+  background-color: #4CAF50;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 20px;
   margin: 20px;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 300px; /* Adjust card width */
+  width: 300px;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -172,7 +151,7 @@ a:hover::before {
 }
 
 .theme-card h3 {
-  color: #fff; /* White text */
+  color: #fff;
   position: relative;
 }
 
@@ -186,7 +165,7 @@ a:hover::before {
 }
 
 .theme-card p {
-  color: #ddd; /* Light gray text */
+  color: #ddd;
 }
 
 .blog {
@@ -194,43 +173,42 @@ a:hover::before {
 }
 
 .about {
-  background-color: #fff; /* White background */
+  background-color: #fff;
   padding: 50px 0;
 }
 
-/* Add this style to create a logical section break */
 .about::before {
   content: '';
   display: block;
-  height: 50px; /* Adjust the height of the section break */
+  height: 50px;
 }
 
 .founder-info {
   text-align: center;
   display: flex;
-  justify-content: space-around; /* Adjust as needed */
+  justify-content: space-around;
   align-items: center;
 }
 
 .founder-image {
-  max-width: 200px; /* Adjust the maximum width of the image */
-  margin-right: 20px; /* Adjust the margin between image and description */
+  max-width: 200px;
+  margin-right: 20px;
 }
 
 .founder-image img {
   width: 100%;
   height: auto;
-  border-radius: 8px; /* Add border-radius for a rounded image */
+  border-radius: 8px;
 }
 
 .founder-description {
   margin-top: 10px;
-  color: #555; /* Dark gray text */
+  color: #555;
 }
 
 .contact {
-  background-color: #4CAF50; /* Dark green background */
-  color: #fff; /* White text */
+  background-color: #4CAF50;
+  color: #fff;
   padding: 50px 0;
   text-align: center;
 }
@@ -255,14 +233,14 @@ label {
 
 input,
 textarea {
-  width: calc(100% - 20px); /* Adjust width */
+  width: calc(100% - 20px);
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
 
 button {
-  background-color: #333; /* Dark gray button */
+  background-color: #333;
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -272,11 +250,11 @@ button {
 }
 
 button:hover {
-  background-color: #555; /* Darker gray on hover */
+  background-color: #555;
 }
 
 footer {
-  background-color: #333; /* Dark gray footer */
+  background-color: #333;
   color: #fff;
   text-align: center;
   padding: 10px 0;
@@ -294,7 +272,6 @@ footer {
   color: #fff;
   font-size: 1.5rem;
 }
-
 
 
 
