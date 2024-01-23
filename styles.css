@@ -6,8 +6,8 @@ body, h1, h2, p, ul, li, img, form {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: #f5f5f5; /* Light gray background */
+  font-family: 'Roboto', sans-serif; /* Change to desired font */
+  background-color: #4CAF50; /* Dark green background */
   color: #333;
 }
 
@@ -17,7 +17,7 @@ body {
 }
 
 header {
-  background-color: #3d8b50; /* Green header */
+  background-color: #333; /* Dark gray header */
   color: #fff;
   padding: 1rem 0;
 }
@@ -67,8 +67,6 @@ a:hover::before {
   width: 100px; /* Adjust logo size */
 }
 
-/* Add styles for other sections (hero, themes, about, contact) based on the provided website */
-
 .hero {
   text-align: center;
   padding: 100px 0;
@@ -77,7 +75,22 @@ a:hover::before {
 .hero h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #007acc; /* Blue text */
+  color: #fff; /* White text */
+}
+
+.animated-text {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .themes {
@@ -87,31 +100,36 @@ a:hover::before {
 
 .theme-cards {
   display: flex;
-  justify-content: space-around; /* Align themes horizontally */
-  flex-wrap: wrap; /* Allow wrapping to the next line */
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .theme-card {
-  background-color: #e0e0e0; /* Light gray card background */
+  background-color: #4CAF50; /* Dark green card background */
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 20px;
-  margin: 20px 0; /* Adjust spacing */
+  margin: 20px;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 300px; /* Adjust card width */
+  transition: transform 0.3s ease-in-out;
+}
+
+.theme-card:hover {
+  transform: scale(1.05);
 }
 
 .theme-card h3 {
-  color: #007acc; /* Blue text */
+  color: #fff; /* White text */
 }
 
 .theme-card p {
-  color: #555;
+  color: #ddd; /* Light gray text */
 }
 
 .about {
-  background-color: #f4f4f4; /* Light gray background */
+  background-color: #fff; /* White background */
   padding: 50px 0;
 }
 
@@ -119,8 +137,14 @@ a:hover::before {
   text-align: center;
 }
 
+.founder-description {
+  margin-top: 20px;
+  color: #555; /* Dark gray text */
+}
+
 .contact {
-  background-color: #fff; /* White background */
+  background-color: #4CAF50; /* Dark green background */
+  color: #fff; /* White text */
   padding: 50px 0;
   text-align: center;
 }
@@ -140,6 +164,7 @@ form {
 
 label {
   flex-basis: 100%;
+  text-align: left;
 }
 
 input,
@@ -151,7 +176,7 @@ textarea {
 }
 
 button {
-  background-color: #007acc; /* Blue button */
+  background-color: #333; /* Dark gray button */
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -161,11 +186,11 @@ button {
 }
 
 button:hover {
-  background-color: #005a8c; /* Darker blue on hover */
+  background-color: #555; /* Darker gray on hover */
 }
 
 footer {
-  background-color: #3d8b50; /* Green footer */
+  background-color: #333; /* Dark gray footer */
   color: #fff;
   text-align: center;
   padding: 10px 0;
@@ -183,6 +208,7 @@ footer {
   color: #fff;
   font-size: 1.5rem;
 }
+
 
 
 
