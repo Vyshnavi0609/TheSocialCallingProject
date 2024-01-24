@@ -27,7 +27,7 @@ body {
 header {
   background-color: #333;
   color: #fff;
-  padding: 10px; /* Remove padding */
+  padding: 1rem 0;/* Remove padding */
   text-align: center;
 }
 
@@ -47,8 +47,8 @@ ul {
 
 .logo {
   width: 100px;
-  margin-top: 10px;
-  margin-bottom: 10px;  /* Adjust margin to center the logo vertically and create space at the top */
+  margin-top: 0px;
+  margin-bottom: 0px;  /* Adjust margin to center the logo vertically and create space at the top */
 }
 
 
@@ -168,6 +168,19 @@ a:hover::before {
 .theme-card:nth-child(2) { background-color: #e74c3c; }
 .theme-card:nth-child(3) { background-color: #2ecc71; }
 .theme-card:nth-child(4) { background-color: #f39c12; /* Yellow */ }
+
+.theme-card:nth-child(1) {
+  margin-bottom: 20px;
+}
+.theme-card:nth-child(2) {
+  margin-bottom: 20px;
+}
+.theme-card:nth-child(3) {
+  margin-bottom: 20px;
+}
+.theme-card:nth-child(4) {
+  margin-bottom: 20px;
+}
 
 .theme-card:hover {
   transform: scale(1.05);
@@ -289,18 +302,3 @@ footer {
   color: #fff;
   font-size: 1.5rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
