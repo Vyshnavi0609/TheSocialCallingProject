@@ -67,7 +67,15 @@ a:hover::before {
 .logo {
   width: 100px;
   margin-top: 10px;
+  display: flex;
+  align-items: flex-start;
 }
+
+.logo img {
+  width: 100%;
+  height: auto;
+}
+
 
 .hero {
   position: relative;
