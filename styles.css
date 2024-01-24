@@ -133,6 +133,7 @@ a:hover::before {
 .theme-cards {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap; /* Added flex-wrap to ensure cards wrap to the next line if there is not enough space */
 }
 
 .theme-card {
@@ -276,6 +277,7 @@ footer {
   color: #fff;
   font-size: 1.5rem;
 }
+
 
 
 
