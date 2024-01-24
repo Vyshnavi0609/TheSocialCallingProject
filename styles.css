@@ -65,17 +65,17 @@ a:hover::before {
 }
 
 .logo {
-  width: 100px;
-  margin-top: 10px;
   display: flex;
   align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 10px;
+  margin-bottom: 10px; /* Optional: Add margin-bottom if needed */
 }
 
 .logo img {
-  width: 100%;
+  width: 80px; /* Adjust the width as needed */
   height: auto;
 }
-
 
 .hero {
   position: relative;
