@@ -124,8 +124,10 @@ a:hover::before {
   }
 }
 
+/* ... (previous styles) ... */
+
 .themes {
-  background-color: transparent;
+  background-color: transparent; /* Set the background to transparent */
   padding: 10px;
   text-align: center;
 }
@@ -133,10 +135,12 @@ a:hover::before {
 .theme-cards {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; /* Added flex-wrap to ensure cards wrap to the next line if there is not enough space */
+  /* Updated styles for a single row */
+  flex-wrap: wrap;
 }
 
 .theme-card {
+  background-color: #4CAF50; /* Change the background color with !important */
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 20px;
@@ -156,27 +160,17 @@ a:hover::before {
   transform: scale(1.05);
 }
 
-.theme-card h3 {
-  color: #fff;
-  position: relative;
-}
-
-.theme-card h3::after {
-  content: '';
-  display: block;
-  height: 2px;
-  width: 50%;
-  background-color: #fff;
-  margin: 10px auto;
-}
-
+.theme-card h3,
 .theme-card p {
-  color: #ddd;
+  color: #000 !important; /* Change the font color to gray with !important */
 }
 
 .themes h2 {
-  color: #000;
+  color: #000; /* Set font color to black */
 }
+
+/* ... (remaining styles) ... */
+
 
 .about {
   background-color: #fff;
