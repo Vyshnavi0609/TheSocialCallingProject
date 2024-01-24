@@ -34,20 +34,21 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1em;
+  padding: 0 2em; /* adjust as needed */
 }
 
-nav .logo {
-  margin-left: 1em;
+nav .logo img {
+  height: 50px; /* adjust as needed */
 }
 
-nav .menu {
-  margin-right: 1em;
+.nav-items {
   display: flex;
 }
 
-nav .menu li {
-  margin-left: 15px;
+.nav-items a {
+  margin-left: 1em; /* adjust as needed */
+  text-decoration: none;
+  color: black;
 }
 
 ul {
