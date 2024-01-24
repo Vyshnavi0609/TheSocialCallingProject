@@ -23,23 +23,31 @@ body {
   padding: 0;
 }
 
+/* Remove padding from header */
 header {
   background-color: #333;
   color: #fff;
-  padding: 1rem 0;
+  padding: 1rem 0; /* Remove padding */
   text-align: center;
 }
 
+/* Adjust the styles for the navigation links */
 nav {
-  margin-top: 5px;
-  margin-bottom: 20px;
-  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px; /* Adjust margin-bottom to create space between navigation and hero */
+  text-align: center; /* Center the navigation links */
 }
 
 ul {
   list-style: none;
   display: flex;
   justify-content: center;
+}
+
+.logo {
+  width: 100px;
+  margin-top: 0px;
+  margin-bottom: 0px;  /* Adjust margin to center the logo vertically and create space at the top */
 }
 
 li {
@@ -73,13 +81,8 @@ a:hover::before {
   transform-origin: bottom left;
 }
 
-.logo {
-  width: 100px;
-  margin-top: 0;
-}
-
 .logo img {
-  width: 80px;
+  width: 80px; /* Adjust the width as needed */
   height: auto;
 }
 
@@ -129,6 +132,7 @@ a:hover::before {
     transform: translateX(-50%);
   }
 }
+
 
 .themes {
   background-color: transparent;
