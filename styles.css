@@ -32,18 +32,22 @@ header {
 
 nav {
   display: flex;
-  justify-content: space-around;
-  padding: 20px 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
 }
 
-nav .logo{
-  flex: 1;
-  text-align: left;
+nav .logo {
+  margin-left: 1em;
 }
 
-nav .menu{
-  flex: 2;
-  text-align: right;
+nav .menu {
+  margin-right: 1em;
+  display: flex;
+}
+
+nav .menu li {
+  margin-left: 15px;
 }
 
 ul {
@@ -156,11 +160,14 @@ a:hover::before, nav ul li a:hover::after {
   }
 }
 
-/* continue with the rest of your original CSS code */
 .themes {
   background-color: transparent;
   padding: 10px;
   text-align: center;
+}
+
+.themes h2 {
+  color: black;
 }
 
 .theme-cards {
