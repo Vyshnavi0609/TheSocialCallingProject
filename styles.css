@@ -15,13 +15,23 @@ body {
   margin: 0 auto;
 }
 
+.hero {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove padding from header */
 header {
   background-color: #333;
   color: #fff;
-  padding: 1rem 0;
+  padding: 0; /* Remove padding */
   text-align: center;
 }
 
+/* Adjust the styles for the navigation links */
 nav {
   margin-top: 10px;
   margin-bottom: 0;
@@ -75,14 +85,6 @@ a:hover::before {
 .logo img {
   width: 80px; /* Adjust the width as needed */
   height: auto;
-}
-
-.hero {
-  position: relative;
-  overflow: hidden;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
 }
 
 .hero::before {
@@ -174,7 +176,10 @@ a:hover::before {
 }
 
 .themes h2 {
-  color: #000; /* Set font color to black */
+  color: gray; /* Set font color to gray */
+  text-decoration: underline;
+  text-align: center;
+  padding-bottom: 10px; /* Add some space between the heading and underline */
 }
 
 /* ... (remaining styles) ... */
