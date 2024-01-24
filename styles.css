@@ -38,7 +38,8 @@ nav {
 }
 
 nav .logo img {
-  height: 50px; /* adjust as needed */
+  height: auto; /* adjust as needed */
+  width: 100px; /* adjust as needed, setting a width while height:auto maintains aspect ratio */
 }
 
 .nav-items {
@@ -48,7 +49,7 @@ nav .logo img {
 .nav-items a {
   margin-left: 1em; /* adjust as needed */
   text-decoration: none;
-  color: black;
+  color: white; /* color as per your request */
 }
 
 ul {
