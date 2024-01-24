@@ -23,19 +23,27 @@ body {
   padding: 0;
 }
 
-/* Remove padding from header */
 header {
   background-color: #333;
   color: #fff;
-  padding: 1rem 0; /* Remove padding */
+  padding: 1rem 0;
   text-align: center;
 }
 
-/* Adjust the styles for the navigation links */
 nav {
-  margin-top: 10px;
-  margin-bottom: 10px; /* Adjust margin-bottom to create space between navigation and hero */
-  text-align: center; /* Center the navigation links */
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+
+nav .logo{
+  flex: 1;
+  text-align: left;
+}
+
+nav .menu{
+  flex: 2;
+  text-align: right;
 }
 
 ul {
@@ -47,7 +55,6 @@ ul {
 .logo {
   width: 100px;
   margin-top: 0px;
-  margin-bottom: 0px;  /* Adjust margin to center the logo vertically and create space at the top */
 }
 
 li {
@@ -63,7 +70,23 @@ a {
   position: relative;
 }
 
-a::before {
+@keyframes grow {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+nav ul li {
+  animation-name: grow;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+nav ul li:nth-child(1) { animation-delay: 0.1s; }
+nav ul li:nth-child(2) { animation-delay: 0.2s; }
+nav ul li:nth-child(3) {animation-delay: 0.3s; }
+
+a::before, nav ul li a::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -76,7 +99,7 @@ a::before {
   transition: transform 0.3s;
 }
 
-a:hover::before {
+a:hover::before, nav ul li a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
@@ -133,7 +156,7 @@ a:hover::before {
   }
 }
 
-
+/* continue with the rest of your original CSS code */
 .themes {
   background-color: transparent;
   padding: 10px;
@@ -158,38 +181,21 @@ a:hover::before {
   transition: transform 0.3s ease-in-out;
 }
 
+.theme-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
 .theme-card:nth-child(1) { background-color: #3498db; }
 .theme-card:nth-child(2) { background-color: #e74c3c; }
 .theme-card:nth-child(3) { background-color: #2ecc71; }
 .theme-card:nth-child(4) { background-color: #f39c12; }
 
-.theme-card:nth-child(1) {
-  margin-bottom: 20px;
-}
-.theme-card:nth-child(2) {
-  margin-bottom: 20px;
-}
-.theme-card:nth-child(3) {
-  margin-bottom: 20px;
-}
-.theme-card:nth-child(4) {
-  margin-bottom: 20px;
-}
-
-.theme-card:hover {
-  transform: scale(1.05);
-}
-
-.theme-card h3,
-.theme-card p {
+.theme-card h3, .theme-card p {
   color: #000 !important;
   text-decoration: underline;
   margin-bottom: 10px;
-}
-
-.themes h2 {
-  color: gray;
-  text-align: center;
 }
 
 .about {
@@ -251,8 +257,7 @@ label {
   text-align: left;
 }
 
-input,
-textarea {
+input, textarea {
   width: calc(100% - 20px);
   padding: 10px;
   border: 1px solid #ddd;
