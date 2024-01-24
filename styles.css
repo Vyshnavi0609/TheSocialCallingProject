@@ -27,14 +27,16 @@ body {
 header {
   background-color: #333;
   color: #fff;
-  padding: 0; /* Remove padding */
+  padding: 10px; /* Remove padding */
   text-align: center;
 }
 
 /* Adjust the styles for the navigation links */
+
 nav {
   margin-top: 10px;
-  margin-bottom: 0;
+  margin-bottom: 20px; /* Adjust margin-bottom to create space between navigation and hero */
+  text-align: center; /* Center the navigation links */
 }
 
 ul {
@@ -42,6 +44,12 @@ ul {
   display: flex;
   justify-content: center;
 }
+
+.logo {
+  width: 100px;
+  margin: 0px 0; /* Adjust margin to center the logo vertically and create space at the top */
+}
+
 
 li {
   margin: 0 15px;
@@ -74,13 +82,7 @@ a:hover::before {
   transform-origin: bottom left;
 }
 
-.logo {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  margin-top: 10px;
-  margin-bottom: 10px; /* Optional: Add margin-bottom if needed */
-}
+
 
 .logo img {
   width: 80px; /* Adjust the width as needed */
@@ -172,14 +174,15 @@ a:hover::before {
 
 .theme-card h3,
 .theme-card p {
-  color: #000 !important; /* Change the font color to gray with !important */
+  color: #000 !important;
+  text-decoration: underline; 
+  padding-bottom: 10px; /* Add some space between the heading and underline */
+  /* Change the font color to gray with !important */
 }
 
 .themes h2 {
   color: gray; /* Set font color to gray */
-  text-decoration: underline;
   text-align: center;
-  padding-bottom: 10px; /* Add some space between the heading and underline */
 }
 
 /* ... (remaining styles) ... */
